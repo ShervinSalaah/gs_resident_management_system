@@ -1,0 +1,16 @@
+-resident details form(with validation) --> database 
+-Search (using full name, address, nic)
+-modify and delete details and confirmation
+-resident_database. 
+- Create a table called residents with the following fields: 
+o id (INT, AUTO_INCREMENT, PRIMARY KEY) 
+o full_name (VARCHAR(100), NOT NULL) 
+o dob (DATE, NOT NULL) 
+o nic (VARCHAR(12), UNIQUE, NOT NULL) 
+o address (TEXT, NOT NULL) 
+o phone (VARCHAR(15), NOT NULL) 
+o email (VARCHAR(100), NOT NULL) 
+o occupation (VARCHAR(50), NULL) 
+o gender (ENUM('Male', 'Female', 'Other'), NOT NULL) 
+o registered_date (TIMESTAMP DEFAULT CURRENT_TIMESTAMP)
+
