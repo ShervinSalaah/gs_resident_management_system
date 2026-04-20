@@ -6,7 +6,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #f6f5f7;
+    background-image: url('./Assets/building.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,8 +109,8 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid #ff4b2b;
-    background: #ff445c;
+    border: 1px solid blue ;
+    background: blue ;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -165,8 +167,8 @@ button.ghost {
 }
 
 .overlay {
-    background: #ff416c;
-    background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+    background: blue;
+    background: linear-gradient(to right, blue , blue ) no-repeat 0 0 / cover;
     color: #fff;
     position: relative;
     left: -100%;
@@ -222,23 +224,6 @@ button.ghost {
     transform: translateY(20%);
 }
 
-/* Footer */
-.footer {
-    margin-top: 25px;
-    text-align: center;
-}
-.icons {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-.icons a {
-    margin: 0;
-    height: 30px;
-    width: 30px;
-}
 
 /* ==================== */
 /* 📱 MOBILE STYLES     */
