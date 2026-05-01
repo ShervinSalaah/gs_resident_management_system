@@ -1,9 +1,12 @@
 <?php
-$link =mysqli_connect("localhost", "root", "", "student_rdbms");
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'gs_rdbms';
 
-if($link===false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+$link = new mysqli($host, $user, $password, $database);
+
+if ($link->connect_error) {
+    die("Connection failed: " . $link->connect_error);
 }
-echo "Connected successfully";
-
 ?>
