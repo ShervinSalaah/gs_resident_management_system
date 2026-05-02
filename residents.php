@@ -3,7 +3,7 @@ session_start();
 
 // Protect page - redirect if not logged in
 if (!isset($_SESSION['user_id'])) {
-    header("Location: signin.php");
+    header("Location: index.html");
     exit();
 }
 
@@ -390,7 +390,6 @@ if (isset($_GET['msg'])) {
                 <table>
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Full Name</th>
                             <th>NIC</th>
                             <th>Address</th>
@@ -401,7 +400,7 @@ if (isset($_GET['msg'])) {
                     <tbody>
                         <?php foreach ($residents as $r): ?>
                         <tr class="clickable-row">
-                            <td><?php echo $r['id']; ?></td>
+            
                             <td onclick="viewResident(<?php echo $r['id']; ?>)">
                                 <?php echo htmlspecialchars($r['full_name']); ?>
                             </td>
