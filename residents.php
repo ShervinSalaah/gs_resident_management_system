@@ -357,6 +357,7 @@ if (isset($_GET['msg'])) {
     </style>
 </head>
 <body>
+    (style generated with AI)
     <div class="header">
         <div class="header-content">
             <h1>🏠 Residents Management</h1>
